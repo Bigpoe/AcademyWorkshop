@@ -21,9 +21,8 @@ def test_logout():
     login_page = LoginPageObj(driver)
     assert login_page.bot_image.is_displayed()
 
-def test_tear_down():
+    tear_down()
+
+def tear_down():
     time.sleep(2)
     driver.quit()
-
-# test_logout()
-# test_tear_down()

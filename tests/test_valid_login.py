@@ -18,9 +18,8 @@ def test_valid_login():
 
     assert header.products_header.is_displayed()
 
-def test_tear_down():
+    tear_down()
+
+def tear_down():
     time.sleep(2)
     driver.quit()
-
-# test_valid_login()
-# test_tear_down()

@@ -15,9 +15,8 @@ def test_invalid_login():
 
     assert error_message == 'Epic sadface: Username and password do not match any user in this service'
 
-def test_tear_down():
+    tear_down()
+
+def tear_down():
     time.sleep(2)
     driver.quit()
-
-# test_invalid_login()
-# test_tear_down()

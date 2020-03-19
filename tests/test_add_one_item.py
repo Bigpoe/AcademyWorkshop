@@ -19,11 +19,9 @@ def test_add_one_item():
     products_list_page.add_one_item_to_cart_from_product_list()
 
     assert products_list_page.sauce_lab_bagpack_add_button.text == 'REMOVE'
-## assert is missing
 
-def test_tear_down():
+    tear_down()
+
+def tear_down():
     time.sleep(2)
     driver.quit()
-
-test_add_one_item()
-test_tear_down()

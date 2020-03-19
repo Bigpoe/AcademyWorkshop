@@ -20,11 +20,9 @@ def test_some_items():
 
     assert products_list_page.sauce_lab_bagpack_add_button.text == 'REMOVE'
     assert products_list_page.sauce_labs_bike_light_add_button.text == 'REMOVE'
-## assert is missing
 
-def test_tear_down():
+    tear_down()
+
+def tear_down():
     time.sleep(2)
     driver.quit()
-
-# test_some_items()
-# test_tear_down()
