@@ -1,4 +1,4 @@
-### README Academy Automation
+### Academy Automation
 
 A challenge from a QA Wizeline Academy. 
 
